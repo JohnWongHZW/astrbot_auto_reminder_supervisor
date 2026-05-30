@@ -1,0 +1,9 @@
+name: astrbot_auto_reminder_supervisor
+display_name: 自动提醒监督助手
+desc: 支持定时提醒和持续监督的群聊插件，让bot化身赛博包工头。
+short_desc: 群聊监督插件，支持定时提醒和持续监督
+version: 1.0.1
+author: 流浪本子商人
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.16,<5"

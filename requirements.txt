@@ -1,0 +1,7 @@
+# No additional dependencies required
+# This plugin uses only Python standard library modules:
+# - asyncio (built-in)
+# - json (built-in)
+# - datetime (built-in)
+# - pathlib (built-in)
+# - re (built-in)

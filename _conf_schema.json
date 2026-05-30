@@ -1,0 +1,49 @@
+{
+  "timed_reminders": {
+    "description": "定时提醒规则",
+    "type": "template_list",
+    "templates": {
+      "timed": {
+        "name": "定时提醒",
+        "hint": "用户提醒",
+        "items": {
+          "rule_id": {"type": "string", "default": "", "hint": "留空自动生成"},
+          "user_id": {"type": "string", "default": "", "hint": "用户QQ号(必填)"},
+          "user_name": {"type": "string", "default": "", "hint": "用户昵称(选填)"},
+          "group_id": {"type": "string", "default": "", "hint": "群号(选填)"},
+          "enabled": {"type": "bool", "default": true, "hint": "是否启用"},
+          "repeat_type": {"type": "select", "default": "daily", "options": ["daily", "once"], "hint": "重复类型"},
+          "time_point": {"type": "string", "default": "23:00", "hint": "提醒时间 HH:MM"},
+          "reminder_text": {"type": "string", "default": "时间到了！", "hint": "提醒内容"},
+          "unified_msg_origin": {"type": "string", "default": "", "hint": "发送目标ID(群号)"},
+          "last_triggered_date": {"type": "string", "default": "", "hint": "上次触发日期"}
+        }
+      }
+    },
+    "default": []
+  },
+  "supervision_rules": {
+    "description": "持续监督规则",
+    "type": "template_list",
+    "templates": {
+      "supervision": {
+        "name": "持续监督",
+        "hint": "监督用户",
+        "items": {
+          "rule_id": {"type": "string", "default": "", "hint": "留空自动生成"},
+          "user_id": {"type": "string", "default": "", "hint": "用户QQ号(必填)"},
+          "user_name": {"type": "string", "default": "", "hint": "用户昵称(选填)"},
+          "group_id": {"type": "string", "default": "", "hint": "群号(选填)"},
+          "enabled": {"type": "bool", "default": true, "hint": "是否启用"},
+          "repeat_type": {"type": "select", "default": "daily", "options": ["daily", "once"], "hint": "重复类型"},
+          "time_start": {"type": "string", "default": "22:00", "hint": "开始时间 HH:MM"},
+          "time_end": {"type": "string", "default": "06:00", "hint": "结束时间 HH:MM"},
+          "reply_text": {"type": "string", "default": "为什么还在发消息？", "hint": "回复内容"},
+          "unified_msg_origin": {"type": "string", "default": "", "hint": "发送目标ID(群号)"},
+          "last_triggered_date": {"type": "string", "default": "", "hint": "上次触发日期"}
+        }
+      }
+    },
+    "default": []
+  }
+}
