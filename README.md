@@ -18,6 +18,8 @@
 
 ## 安装方法
 
+**推荐直接在插件市场安装**
+
 1. 将插件文件夹 `astrbot_auto_reminder_supervisor` 复制到 AstrBot 的 `data/plugins/` 目录下
 2. 在 WebUI 的插件管理页面找到该插件
 3. 点击重载插件或重启 AstrBot
